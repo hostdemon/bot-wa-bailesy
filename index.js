@@ -1,4 +1,4 @@
-import { useMultiFileAuthState, makeWASocket, DisconnectReason } from '@whiskeysockets/baileys/lib/index.js'
+import { useMultiFileAuthState, makeWASocket, DisconnectReason } from '@whiskeysockets/baileys'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -29,7 +29,7 @@ async function startBot() {
 
     sock.ev.on('creds.update', saveCreds)
     
-    sock.ev.on('connection.update', (update) => { // <-- INI UDAH DIBENERIN
+    sock.ev.on('connection.update', (update) => {
         const { connection, lastDisconnect } = update
         if (connection === 'open') console.log('Bot Connected ✅')
         if (connection === 'close') {
