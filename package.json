@@ -1,18 +1,20 @@
 {
   "name": "whatsapp-bot-baileys",
   "version": "1.0.0",
+  "description": "Bot WA + Gemini AI",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.17",
-    "@google/generative-ai": "^0.21.0",
-    "dotenv": "^16.4.7",
-    "axios": "^1.7.7",
-    "file-type": "^19.0.0"
+    "@whiskeysockets/baileys": "6.5.0",
+    "@google/generative-ai": "0.21.0",
+    "dotenv": "16.4.5",
+    "axios": "1.7.2",
+    "file-type": "19.0.0"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": "20.11.1"
   }
 }
