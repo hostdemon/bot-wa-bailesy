@@ -1,8 +1,6 @@
 {
   "name": "whatsapp-bot-baileys",
   "version": "1.0.0",
-  "description": "WhatsApp Bot with Baileys + Gemini AI",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
